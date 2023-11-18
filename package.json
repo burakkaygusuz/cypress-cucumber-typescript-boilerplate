@@ -1,0 +1,43 @@
+{
+  "name": "cypress-cucumber-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate project that demonstrates how to e2e testing with cypress and cucumber",
+  "scripts": {
+    "cy:test": "cypress test --e2e --browser:electron",
+    "cy:run": "cypress run --e2e --spec **/*.feature --reporter @badeball/cypress-cucumber-preprocessor/dist/subpath-entrypoints/pretty-reporter.js",
+    "pretty": "prettier --write \"./**/*.{yml,ts,tsx,json}\""
+  },
+  "keywords": [
+    "cypress,cucumber,typescript"
+  ],
+  "author": "Burak Kaygusuz",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^6.0.0",
+    "@faker-js/faker": "^8.3.1",
+    "@types/node": "^20.8.10",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "cypress": "^13.5.1",
+    "eslint": "^8.54.0",
+    "eslint-plugin-cypress": "^2.15.1",
+    "prettier": "3.1.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^19.1.1",
+    "dayjs": "^1.11.10"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/step_definitions/**/*.{js,ts}",
+    "json": {
+      "enabled": true,
+      "output": "cypress/reports/json/cucumber-report.json"
+    },
+    "messages": {
+      "enabled": true,
+      "output": "cypress/reports/messages/cucumber-messages.ndjson"
+    }
+  }
+}

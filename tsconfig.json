@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "lib": ["ES6", "DOM"],
+    "target": "ES6",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "strict": true,
+    "skipLibCheck": true,
+    "types": ["cypress", "node"]
+  },
+  "include": ["**/*.ts", "cypress.report.js"],
+  "exclude": ["node_modules"]
+}
