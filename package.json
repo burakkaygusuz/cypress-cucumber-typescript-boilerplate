@@ -23,7 +23,7 @@
     "eslint-plugin-cypress": "^2.15.1",
     "prettier": "3.1.0",
     "ts-loader": "^9.5.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.2"
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^19.1.1",
