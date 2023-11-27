@@ -1,4 +1,3 @@
-
 Feature: Login
 
   Scenario Outline: Login with valid credentials
@@ -9,3 +8,4 @@ Feature: Login
     Examples:
       | username      | password     |
       | standard_user | secret_sauce |
+      | visual_user   | secret_sauce |
