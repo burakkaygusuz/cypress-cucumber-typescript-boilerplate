@@ -21,7 +21,7 @@
     "cypress": "^13.6.2",
     "eslint": "^8.56.0",
     "eslint-plugin-cypress": "^2.15.1",
-    "prettier": "3.1.0",
+    "prettier": "3.1.1",
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
     "webpack": "^5.89.0"
